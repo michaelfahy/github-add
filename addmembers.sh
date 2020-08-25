@@ -14,5 +14,5 @@ while read -r line; do
    command="curl -X PUT -u $myusername:$mypat $githubapi"
    command="$command""/memberships/$newmember"
    echo "$command"
-   #eval "$command"
+   eval "$command"
 done < newMembers
